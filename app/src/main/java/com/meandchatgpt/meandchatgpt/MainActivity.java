@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.*;
 
+import com.google.android.gms.ads.*;
+
 public class MainActivity extends AppCompatActivity {
     private WebView webView;
 
@@ -23,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+        AdView adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
     }
 
     @Override
