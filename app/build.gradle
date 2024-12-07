@@ -4,14 +4,14 @@ plugins {
 
 android {
     namespace 'com.meandchatgpt.meandchatgpt'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.meandchatgpt.meandchatgpt"
         minSdk 21
-        targetSdk 33
-        versionCode 5
-        versionName "5.0"
+        targetSdk 34
+        versionCode 6
+        versionName "6.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
